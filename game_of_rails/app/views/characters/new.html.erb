@@ -1,0 +1,20 @@
+<h2>New Character</h2>
+
+<%= form_for @character do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+
+  <%= f.label :bastard %>
+  <%= f.check_box :bastard %>
+
+  <%= f.label :fireproof %>
+  <%= f.check_box :fireproof %>
+
+  <%= f.submit %>
+<% end %>
