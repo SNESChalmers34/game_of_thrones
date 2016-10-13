@@ -16,5 +16,7 @@
   <%= f.label :fireproof %>
   <%= f.check_box :fireproof %>
 
+  <%= f.collection_select :house, House.all, :id, :name %>
+
   <%= f.submit %>
 <% end %>
