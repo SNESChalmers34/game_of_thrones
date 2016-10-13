@@ -1,7 +1,10 @@
 <h2>Characters: <%= link_to "+", new_character_path %></h2>
 
 <% @characters.each do |character| %>
-  <p><%= link_to character.name, character_path(character) %></p>
+  <p><%= link_to character.name, character_path(character) %>:
+    <%= link_to "Edit", edit_character_path(character) %>
+    <%= link_to "Delete", character_path(character), method: :delete %>
+  </p>
   <img src="<%= character.img_url %> " alt="">
 
 

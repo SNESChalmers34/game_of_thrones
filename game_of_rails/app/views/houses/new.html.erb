@@ -1,18 +1,3 @@
 <h2>Add House</h2>
 
-
-<%= form_for @house do |f| %>
-  <%= f.label :name,"House " %>
-  <%= f.text_field :name, value: "House " %>
-
-  <%= f.label :img_url, "Banner (url)" %>
-  <%= f.text_field :img_url %>
-
-  <%= f.label :motto %>
-  <%= f.text_field :motto %>
-
-  <%= f.label :territory %>
-  <%= f.text_field :territory %>
-
-  <%= f.submit %>
-<% end %>
+<%= render 'form' %>
