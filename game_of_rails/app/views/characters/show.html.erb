@@ -1,1 +1,10 @@
-<h2><%= @character.name %></h2>
+<h2><%= @character.name %>: <%= @character.house.name%></h2>
+
+<img src="<%= @character.img_url%>" alt="">
+
+<div>
+<img src="<%= @character.house.img_url %>" alt="">
+<div>
+  <%= @character.house.motto %>
+</div>
+</div>
